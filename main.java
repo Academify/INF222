@@ -26,16 +26,16 @@ public class Main{
       double winner = duel(pontA, pontB, first);
 
       if(winner == 1){
-        System.out.println(first + " ganhou!");
+        //System.out.println(first + " ganhou!");
         winsFirst++;
       }else{
-        System.out.println(second + " ganhou!");
+        //System.out.println(second + " ganhou!");
         winsSecond++;
       }
     }
 
-    System.out.println("Wins " + first + ": " + winsFirst);
-    System.out.println("Wins " + second + ": " + winsSecond);
+    System.out.println("Wins " + first + ": " + winsFirst + " (" + (winsFirst*100)/n + "%)");
+    System.out.println("Wins " + second + ": " + winsSecond + " (" + (100 - (winsFirst*100)/n) + "%)");
   }
 
   public static int duel(double pontA, double pontB, String first){
