@@ -56,15 +56,16 @@ public class Main{
 
             aheadA = 0;
             aheadB = 0;
+            tie = 0;
             totalA = Integer.parseInt(args[1]);
             totalB = Integer.parseInt(args[2]);
         }
 
-        System.out.println("Qtd de vitorias de A: " + winsA + " (" + winsA*100/n + "%" + ")");
-        System.out.println("Qtd de vitorias de B: " + winsB + " (" + (100 - (winsA*100)/n) + "%)");
+        System.out.println("Qtd de vitorias de A: " + winsA + " (" + (double) winsA*100/n + "%" + ")");
+        System.out.println("Qtd de vitorias de B: " + winsB + " (" + (100 - (double) (winsA*100)/n) + "%)");
         System.out.println("Média de lançamentos de moedas por jogo: " + coinThrows/n);
-        System.out.println("Quantidade de jogos em que A ficou na frente: " + gameAheadA + " (" + (gameAheadA*100)/n + "%)");
-        System.out.println("Quantidade de jogos em que B ficou na frente: " + gameAheadB + " (" + (gameAheadB*100)/n + "%)");
-        System.out.println("Quantidade de jogos de vitórias empatadas: " + gameAheadTie + " (" + (100 - (gameAheadA*100)/n - (gameAheadB*100)/n) + "%)");
+        System.out.println("Quantidade de jogos em que A ficou na frente: " + gameAheadA + " (" + (double) (gameAheadA*100)/n + "%)");
+        System.out.println("Quantidade de jogos em que B ficou na frente: " + gameAheadB + " (" + (double) (gameAheadB*100)/n + "%)");
+        System.out.println("Quantidade de jogos de vitórias empatadas: " + gameAheadTie + " (" + (100 - (double) (gameAheadA*100)/n - (double) (gameAheadB*100)/n) + "%)");
     }
 }
