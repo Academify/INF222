@@ -23,10 +23,12 @@ public class Main{
                 if(rand == 0){
                     if(totalB != 0){
                         totalB--;
+                        totalA++;
                     }
                 } else if (rand == 1) {
                     if (totalA != 0){
                         totalA--;
+                        totalB++;
                     }
                 }
                 if(totalA > totalB){
@@ -44,9 +46,9 @@ public class Main{
                 winsB++;
             }
 
-            if(aheadA > aheadB){
+            if(aheadA > aheadB && aheadA > tie){
                 gameAheadA++;
-            }else if(aheadB > aheadA){
+            }else if(aheadB > aheadA && aheadB > tie){
                 gameAheadB++;
             }else{
                 gameAheadTie++;
