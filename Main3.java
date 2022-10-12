@@ -68,10 +68,10 @@ public class Main {
 
           if(survivers.contains(3) && survivers.size() == 2 && Math.random() < pont3){
             shootCount++;
-            if(survivers.contains(1)){
-              survivers.remove(survivers.indexOf(1));
-            }else{
+            if(survivers.contains(2)){
               survivers.remove(survivers.indexOf(2));
+            }else{
+              survivers.remove(survivers.indexOf(1));
             }
           }
 
